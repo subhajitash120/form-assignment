@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>health report</title>
+    <STYLE>
+        .DIV{
+            width: 600PX;
+            height: 300px;
+            background-color: aqua;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4gbXKyEr3cp6nRumWwSTMPUX4JNFswp5nMw&usqp=CAU);
+            background-size: cover;
+            text-align: left;
+            font-weight: bolder;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        .div2{
+            text-align: center;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        .LEGEND{
+            font-style: italic;
+            color: brown;
+            font-weight: bolder;
+        }
+        
+    </STYLE>
+</head>
+<body>
+    <CENTER>
+    <DIV CLASS="DIV">
+    <form action="dbcon.php" method="post">
+        <fieldset>
+            <legend CLASS="LEGEND">SUBMIT YOUR HEALTH REPORT</legend>
+            <BR/>
+            <BR/>
+            NAME:
+            <INPUT TYPE="TEXTBOX" NAME="NAME" autofocus="" required=""/>
+            <BR/>
+            <BR/>
+AGE:
+<input type="NUMBER" name="AGE" min="1" max="100" required=""/>
+<BR/>
+<BR/>
+WEIGHT:
+<input type="number" name="weight" min="10" max="100"/> kg
+<BR/>
+<BR/>
+EMAIL ID:
+       <input type="EMAIL" name="EMAIL" required=""/>
+       <br/>
+       <br/>
+       UPLOAD HEALTH REPORT:
+       <INPUT type="file" name="report" required=""/>
+       <BR/>
+       <BR/>
+       <div class="div2">
+       <input type="SUBMIT" name="SUBMIT" onclick="agree()"/>
+       </div>
+        </fieldset>
+    </form>
+    </DIV>
+    </CENTER>
+</body>
+</html>
